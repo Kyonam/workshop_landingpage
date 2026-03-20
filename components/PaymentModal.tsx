@@ -34,9 +34,13 @@ export default function PaymentModal({ isOpen, onClose, amount }: PaymentModalPr
         successUrl: `${window.location.origin}/success`,
         failUrl: `${window.location.origin}/fail`,
       });
-    } catch (error) {
+    } catch (error: any) {
       console.error("Payment failed:", error);
-      alert("결제 요청 중 오류가 발생했습니다.");
+      if (error?.code === "USER_CANCEL") {
+        alert("결제 진행이 취소되었습니다.");
+      } else {
+        alert(error?.message || "결제 요청 중 오류가 발생했습니다.");
+      }
     } finally {
       setLoading(false);
     }
