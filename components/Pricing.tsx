@@ -14,9 +14,9 @@ export default function Pricing() {
               얼리버드 50% 할인 중
             </div>
             
-            <div className="flex items-end justify-center gap-2 mb-8">
-              <span className="text-3xl text-zinc-600 line-through">₩1,200,000</span>
-              <span className="text-5xl md:text-6xl font-black tracking-tighter">₩590,000</span>
+            <div className="flex flex-col items-center justify-center gap-1 mb-8">
+              <span className="text-xl md:text-2xl text-zinc-600 line-through">₩1,200,000</span>
+              <span className="text-5xl md:text-7xl font-black tracking-tighter gradient-text leading-tight">₩590,000</span>
             </div>
 
             <ul className="text-left space-y-4 mb-10">
