@@ -12,14 +12,17 @@ export default function Hero() {
           AI 프로덕트 빌딩 1기 워크샵
         </div>
         
-        <h1 className="text-5xl md:text-7xl font-extrabold tracking-tight mb-8 leading-[1.1]">
-          AI로 내 아이디어를 <br />
-          <span className="gradient-text">실제 프로덕트로</span> 만드는 <br />
-          가장 빠른 방법
+        <h1 className="text-4xl md:text-6xl font-extrabold tracking-tight mb-8 leading-[1.2]">
+          아이디어는 넘치는데 <br className="hidden md:block" />
+          개발자가 없어 포기하셨나요? <br />
+          <span className="gradient-text text-5xl md:text-7xl mt-4 block">
+            6주 뒤, 당신은 직접 <br className="md:hidden" />
+            AI 앱을 런칭하는 '빌더'가 됩니다.
+          </span>
         </h1>
         
         <p className="max-w-2xl mx-auto text-lg md:text-xl text-zinc-400 mb-10 leading-relaxed">
-          아이디어는 있지만 코딩이나 AI 개발 장벽 때문에 망설이고 계신가요? <br className="hidden md:block" />
+          인천대 학생이라면 누구나 가능합니다. <br className="hidden md:block" />
           노코드 툴과 최신 LLM을 활용해 6주 만에 나만의 서비스를 런칭하세요.
         </p>
 
