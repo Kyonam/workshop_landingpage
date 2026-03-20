@@ -38,13 +38,18 @@ export default function Hero() {
           </Link>
         </div>
 
-        {/* Dashboard Mockup */}
-        <div className="mt-20 relative px-4 max-w-5xl mx-auto">
-          <div className="gradient-border rounded-3xl overflow-hidden shadow-2xl shadow-blue-500/20">
+        {/* INU Student Visual */}
+        <div className="mt-20 relative px-4 max-w-5xl mx-auto group">
+          <div className="absolute -top-6 -right-6 z-20 hidden md:block animate-bounce">
+            <div className="glass px-6 py-3 rounded-2xl border-accent-blue/30 shadow-xl">
+              <span className="text-white font-bold text-sm">🎒 INU 학생 특별 할인 적용</span>
+            </div>
+          </div>
+          <div className="gradient-border rounded-3xl overflow-hidden shadow-2xl shadow-purple-500/20">
             <div className="bg-zinc-900 aspect-video md:aspect-[16/9] relative">
               <img 
-                src="/dashboard-mockup.png" 
-                alt="AI Build Workshop Dashboard Mockup"
+                src="/inu-coding.png" 
+                alt="Incheon National University Students Vibe Coding"
                 className="w-full h-full object-cover opacity-90 group-hover:opacity-100 transition-opacity"
               />
               <div className="absolute inset-0 bg-gradient-to-t from-zinc-950/80 to-transparent" />
