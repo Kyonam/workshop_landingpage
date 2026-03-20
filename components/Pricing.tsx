@@ -1,6 +1,10 @@
+import { useState } from "react";
 import Countdown from "./Countdown";
+import PaymentModal from "./PaymentModal";
 
 export default function Pricing() {
+  const [isModalOpen, setIsModalOpen] = useState(false);
+  const discountAmount = 190000;
   return (
     <section id="pricing" className="py-24 relative overflow-hidden">
       <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-full max-w-4xl aspect-square bg-accent-blue/5 rounded-full blur-[120px] -z-10" />
@@ -30,7 +34,10 @@ export default function Pricing() {
               ))}
             </ul>
 
-            <button className="w-full py-5 bg-white text-black font-black text-lg rounded-2xl hover:scale-105 active:scale-95 transition-all shadow-xl shadow-white/10 mb-4">
+            <button 
+              onClick={() => setIsModalOpen(true)}
+              className="w-full py-5 bg-white text-black font-black text-lg rounded-2xl hover:scale-105 active:scale-95 transition-all shadow-xl shadow-white/10 mb-4"
+            >
               지금 바로 신청하기
             </button>
             <p className="text-xs text-zinc-500 font-medium">선착순 15명 한정 (현재 4석 남음)</p>
@@ -39,6 +46,12 @@ export default function Pricing() {
           </div>
         </div>
       </div>
+
+      <PaymentModal 
+        isOpen={isModalOpen} 
+        onClose={() => setIsModalOpen(false)} 
+        amount={discountAmount} 
+      />
     </section>
   );
 }
