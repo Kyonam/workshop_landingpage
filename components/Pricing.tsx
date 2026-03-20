@@ -7,6 +7,7 @@ import PaymentModal from "./PaymentModal";
 export default function Pricing() {
   const [isModalOpen, setIsModalOpen] = useState(false);
   const discountAmount = 190000;
+  
   return (
     <section id="pricing" className="py-24 relative overflow-hidden">
       <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-full max-w-4xl aspect-square bg-accent-blue/5 rounded-full blur-[120px] -z-10" />
