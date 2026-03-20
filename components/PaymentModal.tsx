@@ -22,7 +22,7 @@ export default function PaymentModal({ isOpen, onClose, amount }: PaymentModalPr
     setLoading(true);
 
     try {
-      const clientKey = "test_ck_D5yaAdv5q11VNo7RAn78zN0nE4AY"; // Using the key from the user's .env.local logic
+      const clientKey = process.env.NEXT_PUBLIC_TOSS_CLIENT_KEY || "";
       const tossPayments = await loadTossPayments(clientKey);
 
       await tossPayments.requestPayment("카드", {
