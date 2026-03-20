@@ -1,3 +1,5 @@
+import Countdown from "./Countdown";
+
 export default function Pricing() {
   return (
     <section id="pricing" className="py-24 relative overflow-hidden">
@@ -32,6 +34,8 @@ export default function Pricing() {
               지금 바로 신청하기
             </button>
             <p className="text-xs text-zinc-500 font-medium">선착순 15명 한정 (현재 4석 남음)</p>
+            
+            <Countdown />
           </div>
         </div>
       </div>
