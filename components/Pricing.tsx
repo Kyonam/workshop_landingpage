@@ -1,3 +1,5 @@
+"use client";
+
 import { useState } from "react";
 import Countdown from "./Countdown";
 import PaymentModal from "./PaymentModal";
