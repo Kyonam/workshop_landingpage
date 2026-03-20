@@ -38,11 +38,16 @@ export default function Hero() {
           </Link>
         </div>
 
-        {/* Dashboard Mockup Placeholder */}
-        <div className="mt-20 relative px-4">
-          <div className="gradient-border rounded-3xl overflow-hidden shadow-2xl shadow-blue-500/10">
-            <div className="bg-zinc-900 aspect-video md:aspect-[21/9] flex items-center justify-center">
-              <span className="text-zinc-700 font-medium">Dashboard Preview / Screenshot</span>
+        {/* Dashboard Mockup */}
+        <div className="mt-20 relative px-4 max-w-5xl mx-auto">
+          <div className="gradient-border rounded-3xl overflow-hidden shadow-2xl shadow-blue-500/20">
+            <div className="bg-zinc-900 aspect-video md:aspect-[16/9] relative">
+              <img 
+                src="/dashboard-mockup.png" 
+                alt="AI Build Workshop Dashboard Mockup"
+                className="w-full h-full object-cover opacity-90 group-hover:opacity-100 transition-opacity"
+              />
+              <div className="absolute inset-0 bg-gradient-to-t from-zinc-950/80 to-transparent" />
             </div>
           </div>
         </div>
