@@ -15,8 +15,8 @@ export default function Pricing() {
             </div>
             
             <div className="flex flex-col items-center justify-center gap-1 mb-8">
-              <span className="text-xl md:text-2xl text-zinc-600 line-through">₩1,200,000</span>
-              <span className="text-5xl md:text-7xl font-black tracking-tighter gradient-text leading-tight">₩590,000</span>
+              <span className="text-xl md:text-2xl text-zinc-600 line-through">₩600,000</span>
+              <span className="text-5xl md:text-7xl font-black tracking-tighter gradient-text leading-tight">₩190,000</span>
             </div>
 
             <ul className="text-left space-y-4 mb-10">
